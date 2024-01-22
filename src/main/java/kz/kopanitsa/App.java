@@ -55,7 +55,6 @@ public class App {
         });
     }
 
-
     private static LocalDateTime parseDateTime(String date, String time) {
         String dateTimeString = date + " " + time;
         int indexOfDot = time.indexOf(':');

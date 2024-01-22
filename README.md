@@ -6,6 +6,6 @@
 
 Запустите программу командой java -jar target/TicketReader-1.0-SNAPSHOT.jar в консоли.
 После запуска программы, когда в консоли появится инструкция 
-"Enter the path to the JSON file, origin_name, destination_name: " 
-вам введите путь к файлу tickets.json пункт вылета пункт прилета (одной строкой через пробел).
+"Enter the path to the JSON file, origin_name, destination_name: ",
+введите путь к файлу tickets.json пункт вылета пункт прилета (одной строкой через пробел).
 Программа выведет в консоль результаты расчетов.

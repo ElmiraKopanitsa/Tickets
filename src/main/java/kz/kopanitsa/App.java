@@ -45,10 +45,8 @@ public class App {
             LocalDateTime departureDateTime = parseDateTime(departureDate, departureTime);
             LocalDateTime arrivalDateTime = parseDateTime(arrivalDate, arrivalTime);
             if (origin.equals(originCode) && destination.equals(destinationCode)) {
-                int stopsTime = ticket.get("stops").getAsInt();
                 int flightTime = calculateFlightDuration(departureDateTime, arrivalDateTime);
-                int time = stopsTime + flightTime;
-                minFlightTimeMap.compute(carrier, (key, value) -> (value == null || time < value) ? time : value);
+                minFlightTimeMap.compute(carrier, (key, value) -> (value == null || flightTime < value) ? flightTime : value);
             }
         }
         System.out.println("Min Flight Time:");
